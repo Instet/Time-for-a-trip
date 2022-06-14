@@ -8,22 +8,34 @@
 
 /* Begin PBXBuildFile section */
 		DBA1DE02285397D20039591E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA1DE01285397D20039591E /* AppDelegate.swift */; };
-		DBA1DE04285397D20039591E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA1DE03285397D20039591E /* SceneDelegate.swift */; };
-		DBA1DE06285397D20039591E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA1DE05285397D20039591E /* ViewController.swift */; };
-		DBA1DE09285397D20039591E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBA1DE07285397D20039591E /* Main.storyboard */; };
 		DBA1DE0B285397D30039591E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBA1DE0A285397D30039591E /* Assets.xcassets */; };
 		DBA1DE0E285397D30039591E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBA1DE0C285397D30039591E /* LaunchScreen.storyboard */; };
+		DBA1DE1728539E680039591E /* Ticket.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA1DE1628539E680039591E /* Ticket.swift */; };
+		DBA1DE1D2853A88D0039591E /* NetwokManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA1DE1C2853A88D0039591E /* NetwokManager.swift */; };
+		DBA1DE202853ACCD0039591E /* Support.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA1DE1F2853ACCD0039591E /* Support.swift */; };
+		DBA1DE2228550EDC0039591E /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA1DE2128550EDC0039591E /* Extensions.swift */; };
+		DBA1DE262855183F0039591E /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA1DE252855183E0039591E /* GradientView.swift */; };
+		DBA1DE2828567CC70039591E /* TicketsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA1DE2728567CC70039591E /* TicketsViewController.swift */; };
+		DBA1DE2A28570FA70039591E /* TicketsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA1DE2928570FA60039591E /* TicketsTableViewCell.swift */; };
+		DBA1DE2D28576D780039591E /* DateFormatedCustom.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA1DE2C28576D780039591E /* DateFormatedCustom.swift */; };
+		DBA1DE2F2857BCF90039591E /* DetailTicketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA1DE2E2857BCF90039591E /* DetailTicketViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DBA1DDFE285397D20039591E /* Time for a trip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Time for a trip.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBA1DE01285397D20039591E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DBA1DE03285397D20039591E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DBA1DE05285397D20039591E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		DBA1DE08285397D20039591E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DBA1DE0A285397D30039591E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DBA1DE0D285397D30039591E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DBA1DE0F285397D30039591E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DBA1DE1628539E680039591E /* Ticket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ticket.swift; sourceTree = "<group>"; };
+		DBA1DE1C2853A88D0039591E /* NetwokManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetwokManager.swift; sourceTree = "<group>"; };
+		DBA1DE1F2853ACCD0039591E /* Support.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Support.swift; sourceTree = "<group>"; };
+		DBA1DE2128550EDC0039591E /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		DBA1DE252855183E0039591E /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		DBA1DE2728567CC70039591E /* TicketsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketsViewController.swift; sourceTree = "<group>"; };
+		DBA1DE2928570FA60039591E /* TicketsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketsTableViewCell.swift; sourceTree = "<group>"; };
+		DBA1DE2C28576D780039591E /* DateFormatedCustom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatedCustom.swift; sourceTree = "<group>"; };
+		DBA1DE2E2857BCF90039591E /* DetailTicketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTicketViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,14 +69,52 @@
 			isa = PBXGroup;
 			children = (
 				DBA1DE01285397D20039591E /* AppDelegate.swift */,
-				DBA1DE03285397D20039591E /* SceneDelegate.swift */,
-				DBA1DE05285397D20039591E /* ViewController.swift */,
-				DBA1DE07285397D20039591E /* Main.storyboard */,
+				DBA1DE192853A79C0039591E /* View */,
+				DBA1DE2B28574EAB0039591E /* Networking */,
+				DBA1DE1528539E3A0039591E /* Models */,
+				DBA1DE1E2853AC7E0039591E /* SupportFiles */,
 				DBA1DE0A285397D30039591E /* Assets.xcassets */,
 				DBA1DE0C285397D30039591E /* LaunchScreen.storyboard */,
 				DBA1DE0F285397D30039591E /* Info.plist */,
 			);
 			path = "Time for a trip";
+			sourceTree = "<group>";
+		};
+		DBA1DE1528539E3A0039591E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DBA1DE1628539E680039591E /* Ticket.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DBA1DE192853A79C0039591E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DBA1DE2728567CC70039591E /* TicketsViewController.swift */,
+				DBA1DE2928570FA60039591E /* TicketsTableViewCell.swift */,
+				DBA1DE2E2857BCF90039591E /* DetailTicketViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DBA1DE1E2853AC7E0039591E /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				DBA1DE1F2853ACCD0039591E /* Support.swift */,
+				DBA1DE2128550EDC0039591E /* Extensions.swift */,
+				DBA1DE252855183E0039591E /* GradientView.swift */,
+				DBA1DE2C28576D780039591E /* DateFormatedCustom.swift */,
+			);
+			path = SupportFiles;
+			sourceTree = "<group>";
+		};
+		DBA1DE2B28574EAB0039591E /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				DBA1DE1C2853A88D0039591E /* NetwokManager.swift */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +177,6 @@
 			files = (
 				DBA1DE0E285397D30039591E /* LaunchScreen.storyboard in Resources */,
 				DBA1DE0B285397D30039591E /* Assets.xcassets in Resources */,
-				DBA1DE09285397D20039591E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +187,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DBA1DE06285397D20039591E /* ViewController.swift in Sources */,
+				DBA1DE1728539E680039591E /* Ticket.swift in Sources */,
+				DBA1DE2828567CC70039591E /* TicketsViewController.swift in Sources */,
+				DBA1DE2F2857BCF90039591E /* DetailTicketViewController.swift in Sources */,
+				DBA1DE2D28576D780039591E /* DateFormatedCustom.swift in Sources */,
+				DBA1DE2228550EDC0039591E /* Extensions.swift in Sources */,
+				DBA1DE202853ACCD0039591E /* Support.swift in Sources */,
+				DBA1DE1D2853A88D0039591E /* NetwokManager.swift in Sources */,
 				DBA1DE02285397D20039591E /* AppDelegate.swift in Sources */,
-				DBA1DE04285397D20039591E /* SceneDelegate.swift in Sources */,
+				DBA1DE262855183F0039591E /* GradientView.swift in Sources */,
+				DBA1DE2A28570FA70039591E /* TicketsTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		DBA1DE07285397D20039591E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DBA1DE08285397D20039591E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		DBA1DE0C285397D30039591E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -290,11 +338,11 @@
 				DEVELOPMENT_TEAM = 46SB5959W9;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Time for a trip/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Time for a trip";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,7 +352,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -318,11 +366,11 @@
 				DEVELOPMENT_TEAM = 46SB5959W9;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Time for a trip/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Time for a trip";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -332,7 +380,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
