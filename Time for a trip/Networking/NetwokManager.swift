@@ -8,9 +8,10 @@
 import Foundation
 
 final class NetwokManager {
+    
 
     func fetchData(urlString: String,
-                          completion: @escaping (Result<TicketsJSON, Error>) -> Void) {
+                   completion: @escaping (Result<TicketsJSON, Error>) -> Void) {
 
         guard let url = URL(string: urlString) else { return }
 
@@ -31,12 +32,10 @@ final class NetwokManager {
                 completion(.failure(jsonError))
             }
 
-
-
         }.resume()
-    
-
     }
+
+
 
     func sortByPrice() {
         // here is some code

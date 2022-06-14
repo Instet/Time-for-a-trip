@@ -15,8 +15,14 @@ class TicketsViewController: UIViewController {
 
     static var arrayTickets: [Ticket] = []
 
+    private lazy var activityIndicator: UIActivityIndicatorView = {
+        let indicator = UIActivityIndicatorView(style: .large)
+        indicator.color = .gray
+        indicator.startAnimating()
+        return indicator
+    }()
 
-     var tableViewTickets: UITableView = {
+    var tableViewTickets: UITableView = {
         let tableView = UITableView(frame: .zero, style: .insetGrouped)
         return tableView
     }()
@@ -52,17 +58,19 @@ class TicketsViewController: UIViewController {
             case .success(let tickets):
                 for value in tickets.data {
                     TicketsViewController.arrayTickets.append(Ticket(startCity: value.startCity,
-                                                startCityCode: value.startCityCode,
-                                                endCity: value.endCity,
-                                                endCityCode: value.endCityCode,
-                                                startDate: value.startDate,
-                                                endDate: value.endDate,
-                                                price: value.price,
-                                                searchToken: value.searchToken,
-                                                isLiked: false))
+                                                                     startCityCode: value.startCityCode,
+                                                                     endCity: value.endCity,
+                                                                     endCityCode: value.endCityCode,
+                                                                     startDate: value.startDate,
+                                                                     endDate: value.endDate,
+                                                                     price: value.price,
+                                                                     searchToken: value.searchToken,
+                                                                     isLiked: false))
                 }
-                DispatchQueue.main.async {
+                DispatchQueue.main.async{
+                    sleep(2)
                     self?.tableViewTickets.reloadData()
+                    self?.activityIndicator.stopAnimating()
                 }
             case .failure(let error):
                 print("error", error)
@@ -90,8 +98,11 @@ class TicketsViewController: UIViewController {
     }
 
     private func setupConstraints() {
-        view.addSubviews(tableViewTickets)
+        view.addSubviews(tableViewTickets, activityIndicator)
         NSLayoutConstraint.activate([
+            activityIndicator.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            activityIndicator.centerYAnchor.constraint(equalTo: view.centerYAnchor),
+
             tableViewTickets.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
             tableViewTickets.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor),
             tableViewTickets.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor),
@@ -147,7 +158,7 @@ extension TicketsViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableViewTickets.dequeueReusableCell(withIdentifier: String(describing: TicketsTableViewCell.self), for: indexPath) as! TicketsTableViewCell
         cell.configCell(TicketsViewController.arrayTickets[indexPath.section])
-        cell.callback = { 
+        cell.callback = {
             if TicketsViewController.arrayTickets[indexPath.section].isLiked{
                 TicketsViewController.arrayTickets[indexPath.section].isLiked = false
                 tableView.reloadData()
